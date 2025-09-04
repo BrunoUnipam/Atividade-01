@@ -45,7 +45,24 @@ public void addFinal(T dado){
 
 //----------------------------------------------------------------------------------------------------//
 
+public void removerInicio(){
 
+    if(primeiroNo==null){
+        System.out.println("lista vazia");
+    }
+
+    else{
+        System.out.println(primeiroNo.getDado() + "removido");
+
+        if (primeiroNo==ultimoNo) {
+            primeiroNo =primeiroNo.getNextNo();
+            ultimoNo= ultimoNo.getNextNo();
+        }
+
+        else{
+        primeiroNo = primeiroNo.getNextNo();}
+    }
+}
 
 //----------------------------------------------------------------------------------------------------//
 
