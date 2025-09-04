@@ -20,12 +20,12 @@ public void addFinal(T dado){
         primeiroNo = ultimoNo = novoNo;
     }
     else{
-        ultimoNo.setNextNo(novoNo);
-        ultimoNo = novoNo;
+        ultimoNo.setNextNo(novoNo); // ultimoNo vai apontar para o valor do novoNo
+        ultimoNo = novoNo; // o ultimoNo passa a ser o novoNo
     }
 }
 //----------------------------------------------------------------------------------------------------//
-    public void imprimeLista(){
+    public void imprimeFila(){
 
             if(primeiroNo==null){
         System.out.println("Lista Vazia");
@@ -37,7 +37,6 @@ public void addFinal(T dado){
         while (aux !=null) {
             System.out.print(aux.toString()+" ");
             aux = aux.getNextNo();
-            System.out.println();
         }
 
          }
@@ -51,16 +50,15 @@ public void removerInicio(){
         System.out.println("lista vazia");
     }
 
-    else{
-        System.out.println(primeiroNo.getDado() + "removido");
-
+    else{}
         if (primeiroNo==ultimoNo) {
-            primeiroNo =primeiroNo.getNextNo();
+            primeiroNo =primeiroNo.getNextNo();// primeiroNo passa a ser o seu nextNo, no caso Null
             ultimoNo= ultimoNo.getNextNo();
         }
 
         else{
-        primeiroNo = primeiroNo.getNextNo();}
+        primeiroNo = primeiroNo.getNextNo(); //primeiro no passa a ser seu nextNo
+    }
     }
 }
 
