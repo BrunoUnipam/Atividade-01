@@ -5,9 +5,10 @@ public class Main {
         pilha.push(" Java ");
           pilha.push(" Python ");
             pilha.push(" Java Script ");
-                pilha.pop();
-            pilha.push(" React ");
-          pilha.push(" C# ");
+            pilha.pop();
+            pilha.push(" C# ");
+            pilha.push(" ReactNav ");
+             
             
 
     pilha.imprimePilha();
