@@ -5,11 +5,9 @@ public class Main2 {
         fila.addFinal("Bruno");
          fila.addFinal("Rafael");
           fila.addFinal("Maelle");
-          fila.removerInicio();
-
-          fila.addFinal("Marilucia");
-          fila.addFinal("Rogerio");
- fila.removerInicio();
+      fila.removerInicio();
+       fila.addFinal("Rafael2");
+          fila.addFinal("Maelle2");
            fila.imprimeFila();
    }
     
